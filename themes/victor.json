@@ -60,18 +60,29 @@
         "punctuation.definition.tag.end.html",
         "punctuation.section.embedded",
         "keyword.other.template",
-        "keyword.other.substitution",
-        "variable.language.this"
+        "keyword.other.substitution"
       ],
       "settings": {
         "foreground": "#89DDFF"
       }
     },
     {
-      "name": "this keyword",
-      "scope": ["variable.language.this"],
+      "name": "keyword control flow",
+      "scope": ["keyword.control.flow"],
       "settings": {
-        "fontStyle": "italic"
+        "foreground": "#cc0066"
+      }
+    },
+    {
+      "name": "this, cls, self",
+      "scope": [
+        "variable.language.this",
+        "variable.parameter.function.language.special.cls",
+        "variable.parameter.function.language.special.self"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#89DDFF"
       }
     },
     {
@@ -210,10 +221,30 @@
       }
     },
     {
+      "name": "ES6 shorhand destructure",
+      "scope": ["variable.other.readwrite.shorthandpropertyname", "JSXAttrs"],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#82AAFF"
+      }
+    },
+    {
       "name": "python function parameters",
       "scope": ["variable.parameter.function-call.python"],
       "settings": {
         "foreground": "#f07178"
+      }
+    },
+    {
+      "name": "python punctuation definition",
+      "scope": [
+        "punctuation.definition.arguments.begin.python",
+        "punctuation.definition.arguments.end.python",
+        "punctuation.definition.parameters.begin.python",
+        "punctuation.definition.parameters.end.python"
+      ],
+      "settings": {
+        "foreground": "#82AAFF"
       }
     },
     // classes, supports, entities
@@ -253,7 +284,16 @@
         "foreground": "#FFCB6B"
       }
     },
+
     // functions, methods, attributes
+    {
+      "name": "Built-in functions",
+      "scope": ["support.function.builtin.python"],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#89DDFF"
+      }
+    },
     {
       "name": "Function, Special Method, Decorator",
       "scope": [
@@ -322,8 +362,8 @@
       }
     },
     {
-      "name": "meta.function-call.arguments.python",
-      "scope": ["meta.function-call.arguments.python"],
+      "name": "meta function-call arguments",
+      "scope": ["meta.function-call.arguments"],
       "settings": {
         "fontStyle": "italic",
         "foreground": "#ff9933"
