@@ -1,6 +1,7 @@
 {
   "name": "Victor HC",
   "tokenColors": [
+    // generals
     {
       "settings": {
         "background": "#263238",
@@ -19,7 +20,20 @@
         "foreground": "#546E7A"
       }
     },
-
+    {
+      "name": "Invalid",
+      "scope": ["invalid", "invalid.illegal"],
+      "settings": {
+        "foreground": "#FF5370"
+      }
+    },
+    {
+      "name": "Invalid deprecated",
+      "scope": ["invalid.deprecated"],
+      "settings": {
+        "foreground": "#C792EA"
+      }
+    },
     // keywords, storages, tags, operators
     {
       "name": "String quoted",
@@ -104,159 +118,14 @@
       }
     },
 
-    // variables, constants, parameters
-    {
-      "name": "Constant fontstyle",
-      "scope": ["constant.language.boolean", "support.constant.property-value"],
-      "settings": {
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "name": "constant placeholder",
-      "scope": ["string constant.other.placeholder"],
-      "settings": {
-        "foreground": "#EEFFFF"
-      }
-    },
-    {
-      "name": "PHP Constants",
-      "scope": ["constant.other.php"],
-      "settings": {
-        "foreground": "#FFCB6B"
-      }
-    },
-    {
-      "name": "Colors",
-      "scope": ["constant.other.color"],
-      "settings": {
-        "foreground": "#ffffff"
-      }
-    },
-    {
-      "name": "Invalid",
-      "scope": ["invalid", "invalid.illegal"],
-      "settings": {
-        "foreground": "#FF5370"
-      }
-    },
-    {
-      "name": "Invalid deprecated",
-      "scope": ["invalid.deprecated"],
-      "settings": {
-        "foreground": "#C792EA"
-      }
-    },
-    {
-      "name": "C-related Block Level Variables",
-      "scope": ["source.cpp meta.block variable.other"],
-      "settings": {
-        "foreground": "#f07178"
-      }
-    },
-
-    {
-      "name": "Variables constant",
-      "scope": ["variable.other.constant"],
-      "settings": {
-        "foreground": "#f07178"
-      }
-    },
-    {
-      "name": "Other Variable, String Link",
-      "scope": ["support.other.variable", "string.other.link"],
-      "settings": {
-        "foreground": "#f07178"
-      }
-    },
-    {
-      "name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
-      "scope": [
-        "constant.numeric",
-        "constant.language",
-        "support.constant",
-        "constant.character",
-        "constant.escape",
-        "keyword.other.unit",
-        "keyword.other"
-      ],
-      "settings": {
-        "foreground": "#0033cc"
-      }
-    },
-    {
-      "name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
-      "scope": ["variable.parameter.function.language.special"],
-      "settings": {
-        "foreground": "#f07178"
-      }
-    },
-
-    {
-      "name": "Symbols, Inherited Class, Markup Heading",
-      "scope": [
-        "constant.other.symbol",
-        "constant.other.key",
-        "entity.other.inherited-class",
-        "markup.heading",
-        "markup.inserted.git_gutter",
-        "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
-      ],
-      "settings": {
-        "fontStyle": "normal",
-        "foreground": "#F78C6C"
-      }
-    },
-    {
-      "name": "meta property object",
-      "scope": ["meta.property.object"],
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#82AAFF"
-      }
-    },
-    {
-      "name": "function parameter",
-      "scope": ["variable.parameter.function"],
-      "settings": {
-        "foreground": "#f07178"
-      }
-    },
-    {
-      "name": "ES6 shorhand destructure",
-      "scope": ["variable.other.readwrite.shorthandpropertyname", "JSXAttrs"],
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#82AAFF"
-      }
-    },
-    {
-      "name": "python function parameters",
-      "scope": ["variable.parameter.function-call.python"],
-      "settings": {
-        "foreground": "#f07178"
-      }
-    },
-    {
-      "name": "python punctuation definition",
-      "scope": [
-        "punctuation.definition.arguments.begin.python",
-        "punctuation.definition.arguments.end.python",
-        "punctuation.definition.parameters.begin.python",
-        "punctuation.definition.parameters.end.python"
-      ],
-      "settings": {
-        "foreground": "#82AAFF"
-      }
-    },
     // classes, supports, entities
     {
       "name": "Class, Support",
       "scope": [
         "entity.name",
+        "entity.other.inherited-class",
         "support.type",
         "support.class",
-        "entity.other.inherited-class",
         "meta.class.inheritance",
         "markup.changed.git_gutter",
         "support.type.sys-types"
@@ -300,11 +169,17 @@
       "name": "Function, Special Method, Decorator",
       "scope": [
         "entity.name.function",
+        "entity.name.method",
         "meta.function.decorator",
-        "variable.function",
+        "meta.function-call.generic",
+        "meta.method-call.with-arguments",
+        "meta.class-method.js entity.name.function.js",
         "support.function",
         "keyword.other.special-method",
-        "punctuation.definition.parameters"
+        "punctuation.definition.parameters",
+        "punctuation.definition.arguments",
+        "meta.class-method.js entity.name.function",
+        "variable.function.constructor"
       ],
       "settings": {
         "foreground": "#82AAFF"
@@ -323,24 +198,6 @@
       }
     },
     {
-      "name": "entity.name.method.js",
-      "scope": ["entity.name.method.js"],
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#82AAFF"
-      }
-    },
-    {
-      "name": "meta.method.js",
-      "scope": [
-        "meta.class-method.js entity.name.function.js",
-        "variable.function.constructor"
-      ],
-      "settings": {
-        "foreground": "#82AAFF"
-      }
-    },
-    {
       "name": "Attributes",
       "scope": ["entity.other.attribute-name"],
       "settings": {
@@ -356,22 +213,87 @@
         "foreground": "#82AAFF"
       }
     },
+
+    // constants, variables, parameters, arguments
     {
-      "name": "Python function call",
-      "scope": ["meta.function-call.generic.python"],
+      "name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
+      "scope": [
+        "constant.numeric",
+        "constant.language",
+        "support.constant",
+        "constant.character",
+        "constant.escape",
+        "keyword.other.unit",
+        "keyword.other",
+        "variable.parameter.function.language.special"
+      ],
       "settings": {
+        "foreground": "#0033cc"
+      }
+    },
+    {
+      "name": "Variables, String Link",
+      "scope": ["variable.other.readwrite", "support.other.variable", "string.other.link"],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#ff9966"
+      }
+    },
+    {
+      "name": "Variables constant",
+      "scope": ["variable.other.constant", "constant.other.php"],
+      "settings": {
+        "foreground": "#89DDFF"
+      }
+    },
+
+    {
+      "name": "Symbols, Markup Heading",
+      "scope": [
+        "constant.other.symbol",
+        "constant.other.key",
+        "markup.heading",
+        "markup.inserted.git_gutter",
+        "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+      ],
+      "settings": {
+        "foreground": "#ff9933"
+      }
+    },
+    {
+      "name": "object property, quasi, ES6 shorthand destructure",
+      "scope": [
+        "meta.property.object",
+        "entity.quasi.element",
+        "string.quasi",
+        "variable.other.readwrite.shorthandpropertyname",
+        "JSXAttrs"
+      ],
+      "settings": {
+        "fontStyle": "italic",
         "foreground": "#82AAFF"
       }
     },
     {
-      "name": "meta function-call arguments",
+      "name": "function parameter",
+      "scope": [
+        "variable.parameter.function",
+        "meta.function.parameters",
+        "variable.parameter.function-call"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#ff9966"
+      }
+    },
+    {
+      "name": "arguments",
       "scope": ["meta.function-call.arguments"],
       "settings": {
         "fontStyle": "italic",
         "foreground": "#ff9933"
       }
     },
-
     // Others
     {
       "name": "Inserted",
