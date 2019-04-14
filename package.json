@@ -1,0 +1,30 @@
+{
+	"name": "victor-high-contrast",
+	"displayName": "victor-high-contrast",
+	"description": "victor-high-contrast",
+	"version": "1.0.6",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/phamtanvinh/victor-high-contrast.git"
+	},
+	"homepage": "https://github.com/phamtanvinh/victor-high-contrast.git",
+	"engines": {
+		"vscode": "^1.28.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "icon.png",
+	"contributes": {
+		"configuration": {},
+		"themes": [
+			{
+				"label": "victor(HC)",
+				"uiTheme": "hc-black",
+				"path": "./themes/victor.json"
+			}
+		]
+	},
+	"__metadata": {
+	}
+}
