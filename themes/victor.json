@@ -193,7 +193,7 @@
         "support.type.sys-types"
       ],
       "settings": {
-        "foreground": "#FFCB6B"
+        "foreground": "#00FFCC"
       }
     },
     {
@@ -225,7 +225,7 @@
         "variable.other.class.js"
       ],
       "settings": {
-        "foreground": "#FF5370"
+        "foreground": "#00FFCC"
       }
     },
     {
