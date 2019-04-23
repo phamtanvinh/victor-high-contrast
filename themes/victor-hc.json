@@ -34,6 +34,13 @@
         "foreground": "#C792EA"
       }
     },
+    {
+      "name": "text.html.derivative",
+      "scope": ["text.html.derivative"],
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
     // keywords, storages, tags, operators
     {
       "name": "String quoted",
@@ -115,6 +122,13 @@
       ],
       "settings": {
         "foreground": "#f07178"
+      }
+    },
+    {
+      "name":"keyword.other.oracle",
+      "scope": ["keyword.other.oracle"],
+      "settings":{
+        "foreground": "#cc0066"
       }
     },
 
@@ -228,12 +242,16 @@
         "variable.parameter.function.language.special"
       ],
       "settings": {
-        "foreground": "#0033cc"
+        "foreground": "#ff99ff"
       }
     },
     {
       "name": "Variables, String Link",
-      "scope": ["variable.other.readwrite", "support.other.variable", "string.other.link"],
+      "scope": [
+        "variable.other.readwrite",
+        "support.other.variable",
+        "string.other.link"
+      ],
       "settings": {
         "fontStyle": "italic",
         "foreground": "#ff9966"
