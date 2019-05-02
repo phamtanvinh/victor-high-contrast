@@ -60,7 +60,7 @@
       "name": "Keyword, Storage",
       "scope": ["keyword", "storage.type", "storage.modifier"],
       "settings": {
-        "foreground": "#C792EA"
+        "foreground": "#89DDFF"
       }
     },
     {
@@ -186,14 +186,15 @@
         "entity.name.method",
         "meta.function.decorator",
         "meta.function-call.generic",
-        "meta.method-call.with-arguments",
+        // "meta.method-call.with-arguments",
         "meta.class-method.js entity.name.function.js",
         "support.function",
         "keyword.other.special-method",
-        "punctuation.definition.parameters",
-        "punctuation.definition.arguments",
+        // "punctuation.definition.parameters",
+        // "punctuation.definition.arguments",
         "meta.class-method.js entity.name.function",
-        "variable.function.constructor"
+        "variable.function.constructor",
+        "support.function.misc.css"
       ],
       "settings": {
         "foreground": "#82AAFF"
@@ -296,7 +297,7 @@
       "name": "function parameter",
       "scope": [
         "variable.parameter.function",
-        "meta.function.parameters",
+        // "meta.function.parameters",
         "variable.parameter.function-call"
       ],
       "settings": {
@@ -306,7 +307,9 @@
     },
     {
       "name": "arguments",
-      "scope": ["meta.function-call.arguments"],
+      "scope": [ 
+        // "meta.function-call.arguments"
+      ],
       "settings": {
         "fontStyle": "italic",
         "foreground": "#ff9933"
