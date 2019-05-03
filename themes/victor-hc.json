@@ -308,11 +308,21 @@
     {
       "name": "arguments",
       "scope": [ 
-        // "meta.function-call.arguments"
+        "meta.function-call.arguments"
       ],
       "settings": {
         "fontStyle": "italic",
         "foreground": "#ff9933"
+      }
+    },
+    //
+    {
+      "name": "white",
+      "scope": [
+        "punctuation.separator.arguments",
+        "punctuation.definition.arguments"],
+      "settings":{
+        "foreground": "#ffffff"
       }
     },
     // Others
