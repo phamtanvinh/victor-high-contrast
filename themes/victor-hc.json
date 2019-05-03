@@ -320,6 +320,7 @@
         "punctuation.separator",
         "punctuation.definition.parameters",
         "punctuation.definition.arguments",
+        "punctuation.definition.list",
         "punctuation.parenthesis"
       ],
       "settings":{
