@@ -190,8 +190,6 @@
         "meta.class-method.js entity.name.function.js",
         "support.function",
         "keyword.other.special-method",
-        // "punctuation.definition.parameters",
-        // "punctuation.definition.arguments",
         "meta.class-method.js entity.name.function",
         "variable.function.constructor",
         "support.function.misc.css"
@@ -315,12 +313,15 @@
         "foreground": "#ff9933"
       }
     },
-    //
+    // Punctuation
     {
-      "name": "white",
+      "name": "punctuation",
       "scope": [
-        "punctuation.separator.arguments",
-        "punctuation.definition.arguments"],
+        "punctuation.separator",
+        "punctuation.definition.parameters",
+        "punctuation.definition.arguments",
+        "punctuation.parenthesis"
+      ],
       "settings":{
         "foreground": "#ffffff"
       }
