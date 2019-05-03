@@ -99,7 +99,9 @@
       "scope": [
         "variable.language.this",
         "variable.parameter.function.language.special.cls",
-        "variable.parameter.function.language.special.self"
+        "variable.parameter.function.language.special.self",
+        "variable.language.special.self",
+        "variable.language.special.cls"
       ],
       "settings": {
         "fontStyle": "italic",
@@ -198,7 +200,14 @@
         "foreground": "#82AAFF"
       }
     },
-
+    {
+      "name": "magic function",
+      "scope": ["support.function.magic"],
+      "settings":{
+        "fontStyle":"italic",
+        "foreground": "#cc00cc"
+      }
+    },
     {
       "name": "Sub-methods",
       "scope": [
