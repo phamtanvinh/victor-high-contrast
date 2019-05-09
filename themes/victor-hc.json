@@ -73,7 +73,6 @@
     {
       "name": "Operator, Misc",
       "scope": [
-        "keyword.control",
         "constant.other.color",
         "punctuation.definition.tag",
         "punctuation.definition.tag.html",
@@ -89,7 +88,11 @@
     },
     {
       "name": "keyword control flow/conditional",
-      "scope": ["keyword.control.flow", "keyword.control.conditional"],
+      "scope": [
+        "keyword.control",
+        "keyword.control.flow", 
+        "keyword.control.conditional"
+      ],
       "settings": {
         "foreground": "#cc0066"
       }
@@ -197,7 +200,8 @@
         "support.function.misc.css"
       ],
       "settings": {
-        "foreground": "#82AAFF"
+        "foreground": "#82AAFF",
+        "fontStyle": "italic"
       }
     },
     {
@@ -258,7 +262,8 @@
         "variable.parameter.function.language.special"
       ],
       "settings": {
-        "foreground": "#ff99ff"
+        "foreground": "#ff99ff",
+        "fontStyle": "normal"
       }
     },
     {
@@ -317,14 +322,26 @@
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#ff9966"
+        "foreground": "#ff9999"
+      }
+    },
+    // arguments
+    {
+      "name": "general arguments",
+      "scope": [
+        "meta.function-call.arguments",
+        "meta.item-access.arguments"
+      ],
+      "settings": {
+        "fontStyle": "italic",
       }
     },
     {
-      "name": "arguments",
-      "scope": ["meta.function-call.arguments"],
+      "name": "function arguments",
+      "scope": [
+        "meta.function-call.arguments"
+      ],
       "settings": {
-        "fontStyle": "italic",
         "foreground": "#ff9933"
       }
     },
@@ -339,7 +356,8 @@
         "punctuation.parenthesis"
       ],
       "settings": {
-        "foreground": "#ffffff"
+        "foreground": "#ffffff",
+        "fontStyle": "normal"
       }
     },
     // Others
