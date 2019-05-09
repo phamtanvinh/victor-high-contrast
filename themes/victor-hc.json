@@ -241,7 +241,8 @@
       "name": "constant variables",
       "scope": ["constant.other.caps"],
       "settings": {
-        "fontStyle": "bold"
+        "fontStyle": "bold",
+        "foreground": "#ffffff"
       }
     },
     {
