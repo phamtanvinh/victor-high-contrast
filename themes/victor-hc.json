@@ -175,7 +175,17 @@
       }
     },
 
-    // functions, methods, attributes
+    // functions, methods, attributes, modules
+    {
+      "name": "modules",
+      "scope":[
+        "support.type.object.module"
+      ],
+      "settings":{
+        "fontStyle": "italic",
+        "foreground": "#82AAFF",
+      }
+    },
     {
       "name": "Built-in functions",
       "scope": ["support.function.builtin"],
@@ -191,7 +201,6 @@
         "entity.name.method",
         "meta.function.decorator",
         "meta.function-call.generic",
-        // "meta.method-call.with-arguments",
         "meta.class-method.js entity.name.function.js",
         "support.function",
         "keyword.other.special-method",
