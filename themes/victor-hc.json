@@ -90,7 +90,7 @@
       "name": "keyword control flow/conditional",
       "scope": [
         "keyword.control",
-        "keyword.control.flow", 
+        "keyword.control.flow",
         "keyword.control.conditional"
       ],
       "settings": {
@@ -241,14 +241,7 @@
     },
 
     // constants, variables, parameters, arguments
-    {
-      "name": "constant variables",
-      "scope": ["constant.other.caps"],
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "#ffffff"
-      }
-    },
+
     {
       "name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
       "scope": [
@@ -280,12 +273,16 @@
     },
     {
       "name": "Variables constant",
-      "scope": ["variable.other.constant", "constant.other.php"],
+      "scope": [
+        "variable.other.constant",
+        "constant.other.caps",
+        "constant.other.php"
+      ],
       "settings": {
-        "foreground": "#89DDFF"
+        "fontStyle": "bold",
+        "foreground": "#ffffff"
       }
     },
-
     {
       "name": "Symbols, Markup Heading",
       "scope": [
@@ -328,19 +325,14 @@
     // arguments
     {
       "name": "general arguments",
-      "scope": [
-        "meta.function-call.arguments",
-        "meta.item-access.arguments"
-      ],
+      "scope": ["meta.function-call.arguments", "meta.item-access.arguments"],
       "settings": {
-        "fontStyle": "italic",
+        "fontStyle": "italic"
       }
     },
     {
       "name": "function arguments",
-      "scope": [
-        "meta.function-call.arguments"
-      ],
+      "scope": ["meta.function-call.arguments"],
       "settings": {
         "foreground": "#ff9933"
       }
