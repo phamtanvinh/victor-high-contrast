@@ -127,9 +127,9 @@
       }
     },
     {
-      "name":"keyword.other.oracle",
+      "name": "keyword.other.oracle",
       "scope": ["keyword.other.oracle"],
-      "settings":{
+      "settings": {
         "foreground": "#cc0066"
       }
     },
@@ -203,8 +203,8 @@
     {
       "name": "magic function",
       "scope": ["support.function.magic"],
-      "settings":{
-        "fontStyle":"italic",
+      "settings": {
+        "fontStyle": "italic",
         "foreground": "#cc00cc"
       }
     },
@@ -237,6 +237,13 @@
     },
 
     // constants, variables, parameters, arguments
+    {
+      "name": "constant variables",
+      "scope": ["constant.other.caps"],
+      "settings": {
+        "fontStyle": "bold"
+      }
+    },
     {
       "name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
       "scope": [
@@ -314,9 +321,7 @@
     },
     {
       "name": "arguments",
-      "scope": [ 
-        "meta.function-call.arguments"
-      ],
+      "scope": ["meta.function-call.arguments"],
       "settings": {
         "fontStyle": "italic",
         "foreground": "#ff9933"
@@ -332,7 +337,7 @@
         "punctuation.definition.list",
         "punctuation.parenthesis"
       ],
-      "settings":{
+      "settings": {
         "foreground": "#ffffff"
       }
     },
