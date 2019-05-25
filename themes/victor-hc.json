@@ -154,6 +154,15 @@
       }
     },
     {
+      "name": "Italic Inheritance",
+      "scope": [
+        "meta.class.inheritance", 
+        "entity.other.inherited-class"],
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
       "name": "CSS Class and Support",
       "scope": [
         "source.css support.type.property-name",
@@ -177,10 +186,8 @@
     // objects
     {
       "name": "objects",
-      "scope": [
-        "support.type.object"
-      ],
-      "settings":{
+      "scope": ["support.type.object"],
+      "settings": {
         "foreground": "#ffffffff"
       }
     },
@@ -188,12 +195,10 @@
     // functions, methods, attributes, modules
     {
       "name": "modules",
-      "scope":[
-        "support.type.object.module"
-      ],
-      "settings":{
+      "scope": ["support.type.object.module"],
+      "settings": {
         "fontStyle": "italic",
-        "foreground": "#82AAFF",
+        "foreground": "#82AAFF"
       }
     },
     {
@@ -364,6 +369,7 @@
         "punctuation.definition.parameters",
         "punctuation.definition.arguments",
         "punctuation.definition.list",
+        "punctuation.definition.inheritance",
         "punctuation.parenthesis"
       ],
       "settings": {
