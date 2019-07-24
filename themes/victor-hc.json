@@ -365,6 +365,7 @@
     {
       "name": "punctuation",
       "scope": [
+        "meta.brace",
         "punctuation.separator",
         "punctuation.section.parens",
         "punctuation.definition.parameters",
