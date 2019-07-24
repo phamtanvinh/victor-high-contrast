@@ -361,6 +361,7 @@
       "name": "punctuation",
       "scope": [
         "punctuation.separator",
+        "punctuation.section.parens",
         "punctuation.definition.parameters",
         "punctuation.definition.arguments",
         "punctuation.definition.list",
