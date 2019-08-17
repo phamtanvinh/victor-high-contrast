@@ -155,9 +155,7 @@
     },
     {
       "name": "Italic Inheritance",
-      "scope": [
-        "meta.class.inheritance", 
-        "entity.other.inherited-class"],
+      "scope": ["meta.class.inheritance", "entity.other.inherited-class"],
       "settings": {
         "fontStyle": "italic"
       }
@@ -263,7 +261,6 @@
         "foreground": "#82AAFF"
       }
     },
-
     // constants, variables, parameters, arguments
 
     {
@@ -379,6 +376,20 @@
         "fontStyle": "normal"
       }
     },
+    // decorators
+    {
+      "name": "Decorators",
+      "scope": [
+        "entity.name.function.decorator",
+        "meta.function.decorator",
+        "tag.decorator.js entity.name.tag.js",
+        "tag.decorator.js punctuation.definition.tag.js"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#cc33ff"
+      }
+    },
     // Others
     {
       "name": "Inserted",
@@ -420,17 +431,6 @@
       "scope": ["*url*", "*link*", "*uri*"],
       "settings": {
         "fontStyle": "underline"
-      }
-    },
-    {
-      "name": "Decorators",
-      "scope": [
-        "tag.decorator.js entity.name.tag.js",
-        "tag.decorator.js punctuation.definition.tag.js"
-      ],
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "#82AAFF"
       }
     },
     {
