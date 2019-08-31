@@ -365,11 +365,11 @@
         "meta.brace",
         "punctuation.separator",
         "punctuation.section.parens",
-        // "punctuation.definition.parameters",
-        // "punctuation.definition.arguments",
-        // "punctuation.definition.list",
-        // "punctuation.definition.inheritance",
-        "punctuation.definition",
+        "punctuation.definition.parameters",
+        "punctuation.definition.arguments",
+        "punctuation.definition.list",
+        "punctuation.definition.inheritance",
+        "punctuation.definition.dict",
         "punctuation.parenthesis"
       ],
       "settings": {
